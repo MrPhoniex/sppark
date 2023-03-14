@@ -23,6 +23,7 @@ const cudaDeviceProp& gpu_props(int id = 0);
 const std::vector<const gpu_t*>& all_gpus();
 extern "C" bool cuda_available();
 
+//封装了cuda中的stream
 class stream_t {
     cudaStream_t stream;
     const int gpu_id;

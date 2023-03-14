@@ -2,6 +2,7 @@
 // Licensed under the Apache License, Version 2.0, see LICENSE for details.
 // SPDX-License-Identifier: Apache-2.0
 
+//NTT的核函数，GPU调用点
 template <int intermediate_mul>
 __launch_bounds__(768, 1) __global__
 void _CT_NTT(const unsigned int radix, const unsigned int lg_domain_size,
@@ -291,6 +292,7 @@ public:
     }
 };
 
+//CPU调用NTT的函数入口
 void CT_NTT(fr_t* d_inout, const int lg_domain_size, bool intt,
             const NTTParameters& ntt_parameters, const cudaStream_t& stream)
 {

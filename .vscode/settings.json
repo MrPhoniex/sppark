@@ -1,0 +1,17 @@
+{
+  "cSpell.words": [
+    "arkworks",
+    "blst",
+    "Coeff",
+    "cuda",
+    "ifft",
+    "NVCC",
+    "repr",
+    "rone",
+    "rustc",
+    "sppark",
+    "strdup",
+    "vtest"
+  ],
+  "C_Cpp.errorSquiggles": "disabled"
+}
